@@ -1,0 +1,19 @@
+nome = str(input('Digite o nome do Cidadão fumante: '))
+qtd = int(input('Qantos cigarros o cidadão fuma por dia? '))
+anos = int(input('A quantos anos o cidadão fuma?: '))
+
+fumaporano = qtd * 365
+fumaanos = fumaporano * anos
+
+# Quantos 10min tem um dia
+# 1 dia tem 24hrs cada hr tem 60min ou cada hr tem 6 10 minutos
+# 6 * 24 = <<<  144 >>>  -- 10min p/ dia 
+
+
+diaperdido = fumaanos / 144 
+
+if fumaanos < 360:
+    print('O cidadão {} ja perdeu {} dias'.format(nome, diaperdido))
+else fumaanos > 366:
+    print('O cidadão {} ja perdeu {} anos'.format(nome, diaperdido))
+
