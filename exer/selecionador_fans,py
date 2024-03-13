@@ -1,0 +1,26 @@
+starWars = 0
+starTreck = 0
+jurassickPark = 0
+jurassickWorld = 0
+
+while True:
+    fans = input('Qual seu filme favorito: [STAR-WARS] = 1 / [STAR-TRECK] = 2 / [JURASSIC-PARK] = 3 / [JURASSIC-WORLD] = 4: ')
+
+    if fans == '1':
+        starWars += 1
+    elif fans == '2':
+        starTreck += 1
+    elif fans == '3':
+        jurassickPark += 1
+    elif fans == '4':
+        jurassickWorld += 1
+    
+    continua = input('Deseja incluir mais um fam?: [S] ou [N] ').upper()
+    if continua != 'S':
+        break
+
+print('\n Resultados finais: ')
+print('Existem {} fans de STAR-WARS'.format(starWars))
+print('Existem {} fans de STAR-TRECK'.format(starTreck))
+print('Existem {} fans de JURASSIC-PARKS'.format(jurassickPark))
+print('Existem {} fans de JURASSIC-WORLD'.format(jurassickWorld))
